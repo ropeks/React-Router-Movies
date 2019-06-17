@@ -26,9 +26,7 @@ export default class MovieList extends Component {
     return (
       <div className="movie-list">
         {this.state.movies.map(movie => (
-          <Link className="no-decoration" to={`/movies/${movie.id}`} >
-            <MovieDetails key={movie.id} movie={movie} />
-          </Link>
+          <MovieDetails key={movie.id} movie={movie} />
         ))}
       </div>
     );
@@ -36,13 +34,10 @@ export default class MovieList extends Component {
 }
 
 function MovieDetails({ movie }) {
-  const { title, director, metascore, stars } = movie;
+  const { id } = movie;
   return (
-    <MovieCard 
-      title={title} 
-      director={director} 
-      metascore={metascore} 
-      stars={stars}
-    />
+    <Link className="no-decoration" to={`/movies/${id}`} >
+      <MovieCard movie={movie} />      
+    </Link>
   );
 }
