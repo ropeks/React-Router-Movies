@@ -73,4 +73,11 @@ body {
 
 .no-decoration {
   text-decoration: none;
+  color: black;
+}
+
+.border:hover {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5%;
 }

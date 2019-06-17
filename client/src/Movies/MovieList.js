@@ -38,7 +38,7 @@ function MovieDetails({ movie }) {
   return (
     <Link className="no-decoration" to={`/movies/${id}`} >
       <div className="movie-card">
-      <h2>{movie.title}</h2>  
+        <h2>{movie.title}</h2>  
       </div>     
     </Link>
   );
