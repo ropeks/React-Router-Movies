@@ -37,7 +37,9 @@ function MovieDetails({ movie }) {
   const { id } = movie;
   return (
     <Link className="no-decoration" to={`/movies/${id}`} >
-      <MovieCard movie={movie} />      
+      <div className="movie-card">
+      <h2>{movie.title}</h2>  
+      </div>     
     </Link>
   );
 }
