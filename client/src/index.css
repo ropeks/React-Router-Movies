@@ -70,3 +70,14 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+.no-decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.border:hover {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5%;
+}
